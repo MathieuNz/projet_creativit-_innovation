@@ -1,2 +1,4 @@
 def calculate_average(values):
-    return sum(values) / len(values)  # Bug: No check for empty list
+    if not values:
+        return 0
+    return sum(values) / len(values)
